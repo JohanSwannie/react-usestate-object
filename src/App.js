@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function App() {
-  const [form, setState] = useState({
+  const [form, setForm] = useState({
     username: "",
     password: "",
   });
@@ -12,7 +12,7 @@ function App() {
   };
 
   const updateField = (e) => {
-    setState({
+    setForm({
       ...form,
       [e.target.name]: e.target.value,
     });
